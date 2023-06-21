@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-14T05:29:11.032Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8021404600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Customer Login functionality happy path",
+        "description": "",
+        "id": "verify-customer-login-functionality;verify-customer-login-functionality-happy-path;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 592658000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 578667400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am in landing page http://it.microtechlimited.com",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.i_am_in_landing_page_http_it_microtechlimited_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 467733000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Click on Login menu",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.i_Click_on_Login_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 256852500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on Customer Login",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.click_on_Customer_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 212876600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter User Id as \"david@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"david@gmail.com\"",
+                  "offset": 17
+                }
+              ],
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.enter_User_Id_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125928800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I Enter Password as \"1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"1234\"",
+                  "offset": 20
+                }
+              ],
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.i_Enter_Password_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 764562400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Click on Login Button",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.i_Click_on_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56967800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify that I am in CUSTOMER Home Page",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustomerLoginFunctionality.verify_that_I_am_in_CUSTOMER_Home_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Customer Login functionality",
+    "description": "",
+    "id": "verify-customer-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/customer/Feature_CustomerLoginFunctionality.feature",
+    "tags": []
+  },
+  {
+    "line": 9,
+    "elements": [
+      {
+        "start_timestamp": "2023-05-14T05:29:22.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1847937500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Customer Order total count Test",
+        "description": "",
+        "id": "customer-orders-functionality;customer-order-total-count-test",
+        "after": [
+          {
+            "result": {
+              "duration": 526697200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2125783200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I logged in as Customer",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustoemrOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "david@gmail.com",
+                  "1234"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 431753000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on Order List Menu",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustoemrOrder.click_on_Order_List_Menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83952400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Verify Total Order count is greater than 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 41
+                }
+              ],
+              "location": "step_definitions.customer.StepDefs_CustoemrOrder.verify_Total_Order_count_is_greater_than(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Customer orders functionality",
+    "description": "  As a Customer\n  I want to See my Orders\n  So that I can manage my Orders",
+    "id": "customer-orders-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/customer/Feaure_CustomerOrder.feature",
+    "tags": []
+  }
+]
